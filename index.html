@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Верстка сайта</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- === HEADER === -->
+        <header class="header header_absolute">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="header__logolink" href="/">
+                        <img class="header__logo" src="images/logo.webp" alt="logo">
+                    </a>
+
+                    <ul class="header__list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">reviews</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+                    <div class="header__end">
+                        <div class="languages">
+                            <a class="languages__item active" href="#">EN</a>
+                            <a class="languages__item" href="#">RU</a>
+                            <a class="languages__item" href="#">es</a>
+                        </div>
+
+                        <a class="header__btn getModal" href="#mobileMenu">
+                            <img src="images/header-btn-white.svg" alt="header btn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- ==== MAIN CONTENT ==== -->
+        <main class="main">
+            <!-- === VIEW === -->
+            <section class="view spacing" style="background-image: url(images/view-bg.webp);">
+                <div class="container">
+                    <div class="view__inner">
+                        <h1 class="view__title">AWARD-WINNING <br> luxury INTERIORS</h1>
+                        <div class="view__info">Traditions + Innovation</div>
+                        <a class="btn btn_outline" href="#">view PROJECTS</a>
+                        <div class="view__vertical">DESIGN+BUILT</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === INFO === -->
+            <section class="info spacing" style="background-image: url(images/info-bg.webp);">
+                <div class="info__slider">
+                    <img class="info__slide" src="images/sponsor-1.webp" loading="lazy" alt="info img">
+                    <img class="info__slide" src="images/sponsor-2.webp" loading="lazy" alt="info img">
+                    <img class="info__slide" src="images/sponsor-3.webp" loading="lazy" alt="info img">
+                    <img class="info__slide" src="images/sponsor-4.webp" loading="lazy" alt="info img">
+                    <img class="info__slide" src="images/sponsor-5.webp" loading="lazy" alt="info img">
+                    <img class="info__slide" src="images/sponsor-6.webp" loading="lazy" alt="info img">
+                    <img class="info__slide" src="images/sponsor-7.webp" loading="lazy" alt="info img">
+                    <img class="info__slide" src="images/sponsor-8.webp" loading="lazy" alt="info img">
+                </div>
+
+                <div class="container">
+                    <div class="info__inner">
+                        <div class="info__wrapper">
+                            <img class="info__img" src="images/info-woman.webp" loading="lazy" alt="info img">
+                        </div>
+                        <div class="info__content">
+                            <h2 class="title">Meet <span>Natalia Neverko</span></h2>
+                            <p class="text">Natalia Neverko is an award-winning top interior designer. She has been
+                                transforming spaces in Miami since 2004. Recognized as a leading interior designer in
+                                the area, her projects can be seen in numerous high-end oceanfront properties and
+                                condos, including locations like Armani, Turnberry, Acqualina, as well as areas such as
+                                Sunny Isles, Surfside, Bal Harbour, and Fisher Island.</p>
+                            <a class="btn btn_outline btn_dark" href="#">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === SEEN === -->
+            <section class="seen" style="background-image: url(images/seen-bg.webp);">
+                <div class="container">
+                    <h2 class="seen__title text-center">As seen in</h2>
+                </div>
+                <div class="seen__slider mt">
+                    <img class="seen__slide" src="images/seen-1.webp" loading="lazy" alt="seen img">
+                    <img class="seen__slide" src="images/seen-2.webp" loading="lazy" alt="seen img">
+                    <img class="seen__slide" src="images/seen-3.webp" loading="lazy" alt="seen img">
+                    <img class="seen__slide" src="images/seen-4.webp" loading="lazy" alt="seen img">
+                    <img class="seen__slide" src="images/seen-5.webp" loading="lazy" alt="seen img">
+                    <img class="seen__slide" src="images/seen-6.webp" loading="lazy" alt="seen img">
+                    <img class="seen__slide" src="images/seen-7.webp" loading="lazy" alt="seen img">
+                    <img class="seen__slide" src="images/seen-8.webp" loading="lazy" alt="seen img">
+                    <img class="seen__slide" src="images/seen-9.webp" loading="lazy" alt="seen img">
+                    <img class="seen__slide" src="images/seen-10.webp" loading="lazy" alt="seen img">
+                    <img class="seen__slide" src="images/seen-11.webp" loading="lazy" alt="seen img">
+                </div>
+            </section>
+
+            <!-- === PROJECTS === -->
+            <section class="projects spacing" style="background-image: url(images/projects-bg.webp);">
+                <div id="projectsSlider" class="projects__slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="projects__item">
+                                <div class="container">
+                                    <div class="projects__content">
+                                        <h2 class="title">OUR DESIGN <span>PROJECTS</span></h2>
+                                        <p class="text">
+                                            At Natalia Neverko Design, we deliver excellence and perfection in every
+                                            project. We pay meticulous attention to all details, ensuring that each
+                                            space we design is harmonious and successful.
+                                            <br><br>
+                                            Our team is dedicated to helping you create environments that inspire and
+                                            elevate, blending functionality with aesthetic appeal.
+                                        </p>
+                                        <a class="btn btn_outline" href="#">VIEW OUR PROJECTS</a>
+                                    </div>
+                                    <img class="projects__img" src="images/projects-img.webp" loading="lazy" alt="project img">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="projects__item">
+                                <div class="container">
+                                    <div class="projects__content">
+                                        <h2 class="title">This things <span>PROJECTS</span></h2>
+                                        <p class="text">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+                                            repellendus, nesciunt ab, alias porro aperiam velit obcaecati quidem nobis
+                                            officia ipsam ullam atque. Labore inventore dolores architecto accusantium
+                                            dicta laboriosam.
+                                        </p>
+                                        <a class="btn btn_outline" href="#">VIEW OUR PROJECTS</a>
+                                    </div>
+                                    <img class="projects__img" src="images/projects-img.webp" loading="lazy" alt="project img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === PROJECTS === -->
+            <section class="projects projects_white spacing" style="background-image: url(images/design-bg.webp);">
+                <div id="designSlider" class="projects__slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="projects__item">
+                                <div class="container">
+                                    <img class="projects__img" src="images/design.webp" loading="lazy" alt="project img">
+                                    <div class="projects__content">
+                                        <h2 class="title">OUR DESIGN <span>SERVICEs</span></h2>
+                                        <p class="text">
+                                            Natalia Neverko Design is an award-winning, Miami Design based, full-service
+                                            Interior Design firm. We specialize in creating cutting-edge interiors that
+                                            harmonize luxury with practicality. From opulent residences to visionary
+                                            commercial ventures, our innovative approach spans across South Florida, New
+                                            York, Aspen, and Europe. Embrace our commitment to redefining spaces with
+                                            bespoke, forward-thinking design solutions that resonate with modern
+                                            elegance and sophistication.
+                                        </p>
+                                        <a class="btn btn_outline btn_dark" href="#">VIEW OUR PROJECTS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="projects__item">
+                                <div class="container">
+                                    <img class="projects__img" src="images/projects-img.webp" loading="lazy" alt="project img">
+                                    <div class="projects__content">
+                                        <h2 class="title">This things <span>PROJECTS</span></h2>
+                                        <p class="text">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+                                            repellendus, nesciunt ab, alias porro aperiam velit obcaecati quidem nobis
+                                            officia ipsam ullam atque. Labore inventore dolores architecto accusantium
+                                            dicta laboriosam.
+                                        </p>
+                                        <a class="btn btn_outline btn_dark" href="#">VIEW OUR PROJECTS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- === VIDEOS === -->
+            <section class="videos spacing bg-grey">
+                <div class="container">
+                    <h2 class="title mb">our <span>VIDEOS</span></h2>
+                    <div class="slider__wrapper">
+                        <div class="videos__slider swiper">
+                            <div class="swiper-wrapper">
+                                <a class="videos__item swiper-slide" href="https://youtu.be/SdCzIDmfDAA"
+                                    data-fslightbox="vide">
+                                    <img class="videos__img" src="images/video-1.webp" loading="lazy" alt="video img">
+                                </a>
+
+                                <a class="videos__item swiper-slide" href="https://youtu.be/SdCzIDmfDAA"
+                                    data-fslightbox="vide">
+                                    <img class="videos__img" src="images/video-2.webp" loading="lazy" alt="video img">
+                                </a>
+
+                                <a class="videos__item swiper-slide" href="https://youtu.be/SdCzIDmfDAA"
+                                    data-fslightbox="vide">
+                                    <img class="videos__img" src="images/video-2.webp" loading="lazy" alt="video img">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="slider__arrows">
+                            <button class="arrow arrow__left">
+                                <img class="arrow__icon" src="images/arrow-left.svg" loading="lazy" alt="arrow icon">
+                            </button>
+
+                            <button class="arrow arrow__right">
+                                <img class="arrow__icon" src="images/arrow-right.svg" loading="lazy" alt="arrow icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- === FOOTER === -->
+        <footer class="footer" style="background-image: url(images/footer-bg.webp);">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__main">
+                        <a class="footer__logolink" href="/">
+                            <img class="footer__logo" src="images/logo.webp" loading="lazy" alt="logo">
+                        </a>
+                        <div class="footer__motto">Our vision redefines the <br> boundaries of creativity.</div>
+                        <div class="socials">
+                            <a class="socials__link" href="#">
+                                <img class="social__icon" src="images/facebook.svg" loading="lazy" alt="social icon">
+                            </a>
+
+                            <a class="socials__link" href="#">
+                                <img class="social__icon" src="images/instagram.svg" loading="lazy" alt="social icon">
+                            </a>
+
+                            <a class="socials__link" href="#">
+                                <img class="social__icon" src="images/linked-in.svg" loading="lazy" alt="social icon">
+                            </a>
+
+                            <a class="socials__link" href="#">
+                                <img class="social__icon" src="images/yt.svg" loading="lazy" alt="social icon">
+                            </a>
+
+                            <a class="socials__link" href="#">
+                                <img class="social__icon" src="images/social-icon.svg" loading="lazy" alt="social icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <h3 class="footer__title">Explore</h3>
+                        <ul class="footer__list">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <h3 class="footer__title">Contact</h3>
+                        <div class="footer__info">
+                            <div class="footer__lines">
+                                <div class="footer__line">
+                                    <img src="images/location.svg" loading="lazy" alt="footer icon">
+                                    175 SW 7th street, Suite 1900, Miami FL 33130
+                                </div>
+
+                                <div class="footer__line">
+                                    <img src="images/location.svg" loading="lazy" alt="footer icon">
+                                    20801 Biscayne Blvd., 403, Aventura, FL 33180
+                                </div>
+                            </div>
+
+                            <div class="footer__lines">
+                                <a class="footer__line" href="tel:+13058104608">
+                                    <img src="images/phone.svg" loading="lazy" alt="footer icon">
+                                    +1 305-810-4608
+                                </a>
+
+                                <a class="footer__line" href="mailto:info@natalianeverko.com">
+                                    <img src="images/mail.svg" loading="lazy" alt="footer icon">
+                                    info@natalianeverko.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="footer__other">©2024 NATALIA NEVERKO DESIGN INC. ALL RIGHT RESERVED.</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- === MODAL === -->
+    <div id="modal" class="modal">
+        <div class="modal__inner">
+            <h3 class="modal__title">Оставить заявку</h3>
+            <p class="modal__text">Оставьте свои контактные данные и наш менеджер свяжется с вами в ближайшее время и
+                проведет бесплатную консультацию</p>
+            <button class="modal__close">
+                <img src="images/x-grey.svg" loading="lazy" alt="x icon">
+            </button>
+            <form class="form">
+                <input type="text" name="fullname" placeholder="Ваше имя">
+                <input type="tel" name="phone" placeholder="Номер телефона">
+                <button class="btn btn_red" type="submit">Отправить заявку</button>
+                <label class="form__confirm">
+                    <input type="checkbox" checked>
+                    <div class="form__policy">
+                        Нажимая на кнопку отправить, вы соглашаетесь
+                        с <a href="#">политикой конфиденциальности</a> сайта
+                    </div>
+                </label>
+            </form>
+        </div>
+    </div>
+
+    <!-- === MOBILE MENU === -->
+    <div id="mobileMenu" class="mobile-menu">
+        <div class="mobile-menu__inner">
+            <div class="mobile-menu__main">
+                <div class="mobile-menu__head">
+                    <div class="languages">
+                        <a class="languages__item active" href="#">EN</a>
+                        <a class="languages__item" href="#">RU</a>
+                        <a class="languages__item" href="#">es</a>
+                    </div>
+
+                    <button class="mobile-menu__close">
+                        <img src="images/x-icon.svg" loading="lazy" alt="x icon">
+                    </button>
+                </div>
+
+                <ul class="mobile-menu__list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu__bottom">
+                <a class="mobile-menu__logo" href="/">
+                    <img src="images/logo-black.svg" loading="lazy" alt="logo">
+                </a>
+
+                <div class="mobile-menu__motto">Our vision redefines the boundaries of creativity.</div>
+
+                <div class="socials">
+                    <a class="socials__link" href="#">
+                        <img class="social__icon" src="images/facebook-b.svg" loading="lazy" alt="social icon">
+                    </a>
+
+                    <a class="socials__link" href="#">
+                        <img class="social__icon" src="images/instagram-b.svg" loading="lazy" alt="social icon">
+                    </a>
+
+                    <a class="socials__link" href="#">
+                        <img class="social__icon" src="images/linked-in-b.svg" loading="lazy" alt="social icon">
+                    </a>
+
+                    <a class="socials__link" href="#">
+                        <img class="social__icon" src="images/yt-b.svg" loading="lazy" alt="social icon">
+                    </a>
+
+                    <a class="socials__link" href="#">
+                        <img class="social__icon" src="images/social-icon-b.svg" loading="lazy" alt="social icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- === SCRIPTS === -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=fd996bf6-11fe-4079-a1e2-5c6efd7723af&lang=ru_RU"
+        type="text/javascript"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

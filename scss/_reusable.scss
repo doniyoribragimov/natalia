@@ -1,0 +1,124 @@
+// IMPORT
+@import 'vars';
+@import 'fonts';
+@import 'global';
+
+.title {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    span{
+        color: $cyan;
+        font-weight: 700;
+    }
+}
+
+.spacing {
+    padding: 60px 0;
+}
+
+.btn {
+    @extend %center;
+    width: fit-content;
+    transition: all 0.1s ease-in;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 45px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    &_red {
+        background-color: $main;
+        color: #fff;
+    }
+
+    
+
+    &_outline{
+        border: 1px solid #fff;
+        color: #fff;
+        &:hover{
+            background-color: #fff;
+            color: $main;
+        }
+
+        &::after,
+        &::before{
+            display: none;
+        }
+    }
+
+    &_black{
+        background-color: #000;
+    }
+
+    &_center{
+        display: flex;
+        width: fit-content;
+        margin: auto;
+    }
+
+    &_dark{
+        border-color: #000;
+        color: #000;
+        &:hover{
+            border-color: $main;
+        }
+    }
+
+    &::before,
+    &::after {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100px) skewX(-15deg);
+        content: "";
+    }
+
+    &::before {
+        width: 60px;
+        background: rgba(255, 255, 255, 0.5);
+        filter: blur(30px);
+        opacity: 0.5;
+    }
+
+    &::after {
+        width: 30px;
+        left: 30px;
+        background: rgba(255, 255, 255, 0.2);
+        filter: blur(5px);
+    }
+
+    &:hover {
+        &::before {
+            opacity: 1;
+        }
+
+        &::before,
+        &::after {
+            transform: translateX(300px) skewX(-15deg);
+            transition: all 1s ease;
+        }
+    }
+}
+
+.btn:disabled {
+    background-color: $grey;
+    cursor: not-allowed;
+
+    &:hover {
+        background-color: $grey;
+
+        &::after,
+        &::before {
+            display: none;
+        }
+    }
+}
+
