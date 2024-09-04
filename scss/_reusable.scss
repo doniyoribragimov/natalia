@@ -32,29 +32,39 @@
     font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
-    &_red {
-        background-color: $main;
-        color: #fff;
-    }
-
-    
-
     &_outline{
         border: 1px solid #fff;
         color: #fff;
-        &:hover{
-            background-color: #fff;
-            color: $main;
+        &:active{
+            background-color: $cyan;
+            color: #fff;
+            border-color: $cyan;
         }
 
-        &::after,
-        &::before{
-            display: none;
+        @media (any-hover: hover){
+            &:hover{
+                background-color: $cyan;
+                color: #fff;
+                border-color: $cyan;
+            }
         }
     }
 
     &_black{
         background-color: #000;
+        &:active{
+            background-color: $cyan;
+            color: #fff;
+            border-color: $cyan;
+        }
+
+        @media (any-hover: hover){
+            &:hover{
+                background-color: $cyan;
+                color: #fff;
+                border-color: $cyan;
+            }
+        }
     }
 
     &_center{
@@ -66,44 +76,14 @@
     &_dark{
         border-color: #000;
         color: #000;
-        &:hover{
-            border-color: $main;
-        }
-    }
-
-    &::before,
-    &::after {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateX(-100px) skewX(-15deg);
-        content: "";
-    }
-
-    &::before {
-        width: 60px;
-        background: rgba(255, 255, 255, 0.5);
-        filter: blur(30px);
-        opacity: 0.5;
-    }
-
-    &::after {
-        width: 30px;
-        left: 30px;
-        background: rgba(255, 255, 255, 0.2);
-        filter: blur(5px);
-    }
-
-    &:hover {
-        &::before {
-            opacity: 1;
+        &:active{
+            border-color: $cyan;
         }
 
-        &::before,
-        &::after {
-            transform: translateX(300px) skewX(-15deg);
-            transition: all 1s ease;
+        @media (any-hover: hover){
+            &:hover{
+                border-color: $cyan;
+            }
         }
     }
 }
@@ -111,13 +91,23 @@
 .btn:disabled {
     background-color: $grey;
     cursor: not-allowed;
-
-    &:hover {
+    &:active {
         background-color: $grey;
 
         &::after,
         &::before {
             display: none;
+        }
+    }
+
+    @media (any-hover: hover){
+        &:hover {
+            background-color: $grey;
+    
+            &::after,
+            &::before {
+                display: none;
+            }
         }
     }
 }

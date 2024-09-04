@@ -1,6 +1,32 @@
 @media(max-width: 1600px) {}
 
 @media(max-width: 1400px) {
+    .info{
+        &__img{
+            height: 70%;
+        }
+    }
+
+    .slider__wrapper{
+        .arrow{
+            &__left{
+                left: -20px;
+            }
+
+            &__right{
+                right: -20px;
+            }
+        }
+    }
+
+}
+
+@media(max-width: 1200px) {
+    .container {
+        padding: 0 60px;
+        max-width: 100%;
+    }
+
     .info {
         padding-bottom: 0!important;
         overflow: hidden;
@@ -31,27 +57,10 @@
         }
     }
 
-    .slider__wrapper{
-        .arrow{
-            &__left{
-                left: -20px;
-            }
-
-            &__right{
-                right: -20px;
-            }
-        }
-    }
-
-}
-
-@media(max-width: 1200px) {
-    .container {
-        padding: 0 60px;
-        max-width: 100%;
-    }
-
     .header {
+        &__inner{
+            grid-template-columns: repeat(2, 1fr);
+        }
         &__list {
             display: none;
         }
@@ -61,7 +70,14 @@
         }
 
         &__btn {
-            display: block;
+            display: flex;
+        }
+
+        &__end {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-self: end;
         }
     }
 
@@ -343,9 +359,10 @@
     .socials {
         gap: 10px;
 
-        &__icon {
+        &__link {
             height: 30px;
             width: 30px;
+            padding: 7px;
         }
     }
 
@@ -435,7 +452,7 @@
     }
 
     .videos{
-        &__img{
+        &__item{
             height: 190px;
         }
 
@@ -446,7 +463,7 @@
 
         &__inner{
             grid-template-columns: repeat(1, 1fr);
-            .videos__img{
+            .videos__item{
                 height: 190px;
             }
         }
@@ -587,7 +604,7 @@
     }
 
     .shop{
-        &__img{
+        &__item{
             height: 145px;
         }
 
@@ -613,9 +630,6 @@
         }
     }
 
-    .mapframe{
-        height: 260px;
-    }
 
     .contact{
         &__form{
@@ -624,6 +638,10 @@
         &__title{
             font-size: 20px;
             margin-bottom: 20px;
+        }
+
+        iframe{
+            height: 260px;
         }
     }
 

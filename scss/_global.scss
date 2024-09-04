@@ -54,16 +54,6 @@ section{
   border-radius: 3px;
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-
-
 h1,
 h2,
 h3,
@@ -160,10 +150,17 @@ textarea {
   width: 100%;
   border: 1px solid #000;
   background-color: transparent;
-  &:hover,
+  transition: all 0.1s;
   &:focus {
     border-color: $main;
     background-color: #fff;
+  }
+
+  @media (any-hover: hover){
+    &:hover{
+      border-color: $main;
+      background-color: #fff;
+    }
   }
   
   &::placeholder {
@@ -171,11 +168,19 @@ textarea {
     text-transform: uppercase;
 
   }
-  &:hover::placeholder,
+
   &:focus::placeholder {
     color: $main; 
   }
+
+  @media (any-hover: hover){
+    &:hover::placeholder{
+        color: $main; 
+    }
+  }
 }
+
+
 
 textarea{
   padding-top: 20px;
@@ -232,8 +237,14 @@ img{
   background-color: $cyan;
   @extend %center;
   transition: all 0.1s ease-in;
-  &:hover{
+  &:active{
     background-color: $main;
+  }
+
+  @media (any-hover: hover){
+    &:hover{
+      background-color: $main;
+    }
   }
 
   img{

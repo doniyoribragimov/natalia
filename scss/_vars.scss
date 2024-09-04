@@ -8,17 +8,20 @@ $cyan: #94CAD4;
 %hover {
   transition: all 0.1s ease-in;
   cursor: pointer;
-
-  &:hover {
-    opacity: 0.8;
+  @media (any-hover: hover){
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 
 %color{
   transition: akk 0.02s;
   cursor: pointer;
-  &:hover{
-    color: $main;
+  @media (any-hover: hover){
+    &:hover{
+      color: $cyan;
+    }
   }
 }
 
@@ -27,11 +30,14 @@ $cyan: #94CAD4;
     transition: all 0.05s linear;
   }
 
-  &:hover{
-    img{
-      transform: rotate(-90deg);
+  @media (any-hover: hover){
+    &:hover{
+      img{
+        transform: rotate(-90deg);
+      }
     }
   }
+
 }
 
 @mixin border($border) {
@@ -101,31 +107,13 @@ $cyan: #94CAD4;
 
 %color{
   transition: color 0.1s;
-  &:hover{
-    color: $main;
+  @media (any-hover: hover){
+    &:hover{
+      color: $cyan;
+    }
   }
 }
 
-%line{
-  position: relative;
-  padding-bottom: 2px;
-  color: $main;
-  &::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    height: 1px;
-    background-color: $main;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    transition: all 0.1s linear;
-  }
-
-  &:hover::before{
-    width: 0;
-  }
-}
 
 %selectHide {
   &::selection {
@@ -140,22 +128,6 @@ $cyan: #94CAD4;
 %icon{
   font: normal normal normal 14px / 1 FontAwesome;
 }
-
-
-// select{
-//     padding-right: 20px;
-//     -moz-appearance: none !important;
-//     appearance: none !important;
-//     -webkit-appearance: none !important;
-//     background-image: url('../images/select-down.svg') !important;
-//     background-repeat: no-repeat !important;
-//     background-position: right 0px center !important;
-//     background-size: 10px !important;
-//     outline: none;
-//     &:focus {
-//       background-image: url('../images/select-up.svg') !important;
-//     }
-// }
 
 input[type="checkbox"] {
   position: relative;
